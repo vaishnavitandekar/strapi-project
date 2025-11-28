@@ -129,3 +129,25 @@ dist
 build
 .strapi-updater.json
 .strapi-cloud.json
+
+
+
+############################
+# Terraform
+############################
+
+# State files (never push)
+terraform.tfstate
+terraform.tfstate.backup
+
+# Local provider plugins and cache
+.terraform/
+.terraform.lock.hcl
+
+# Sensitive variable files
+*.tfvars
+*.auto.tfvars
+
+# Credentials and secrets
+*.pem
+*.key
