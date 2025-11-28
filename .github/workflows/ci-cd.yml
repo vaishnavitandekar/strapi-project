@@ -1,0 +1,39 @@
+name: Strapi CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️ Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2️ Setup Node.js
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      # 3️ Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # 4️ Build Strapi admin panel
+      - name: Build Strapi Admin
+        run: npm run build
+
+      # 5 Start Strapi server for demo/testing
+      - name: Start Strapi Server
+        run: |
+          npm run develop &
+          sleep 10
+          curl http://localhost:1337/admin || echo "Server not responding yet"
