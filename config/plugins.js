@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use strict';
 
 module.exports = () => ({
@@ -36,3 +37,6 @@ module.exports = () => ({
     resolve: `../plugins/todo-example`, // From the /examples/plugins folder
   },
 });
+=======
+module.exports = () => ({});
+>>>>>>> cb95d5d596d63f80bf5515746668dab1e5d5ba6a

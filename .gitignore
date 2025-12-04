@@ -82,6 +82,11 @@ ssl
 nbproject
 public/uploads/*
 !public/uploads/.gitkeep
+<<<<<<< HEAD
+=======
+.tsbuildinfo
+.eslintcache
+>>>>>>> cb95d5d596d63f80bf5515746668dab1e5d5ba6a
 
 ############################
 # Node.js
@@ -96,10 +101,31 @@ node_modules
 .node_history
 
 ############################
+<<<<<<< HEAD
 # Tests
 ############################
 
 /coverage/
+=======
+# Package managers
+############################
+
+.yarn/*
+!.yarn/cache
+!.yarn/unplugged
+!.yarn/patches
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+yarn-error.log
+
+############################
+# Tests
+############################
+
+coverage
+>>>>>>> cb95d5d596d63f80bf5515746668dab1e5d5ba6a
 
 ############################
 # Strapi
@@ -108,6 +134,7 @@ node_modules
 .env
 license.txt
 exports
+<<<<<<< HEAD
 *.cache
 dist
 build
@@ -115,3 +142,32 @@ documentation
 .strapi-updater.json
 types/generated
 .strapi
+=======
+.strapi
+dist
+build
+.strapi-updater.json
+.strapi-cloud.json
+
+
+
+############################
+# Terraform
+############################
+
+# State files (never push)
+terraform.tfstate
+terraform.tfstate.backup
+
+# Local provider plugins and cache
+.terraform/
+.terraform.lock.hcl
+
+# Sensitive variable files
+*.tfvars
+*.auto.tfvars
+
+# Credentials and secrets
+*.pem
+*.key
+>>>>>>> cb95d5d596d63f80bf5515746668dab1e5d5ba6a

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use strict';
 
 const cronTasks = require('./src/cron-tasks');
@@ -41,5 +42,15 @@ module.exports = ({ env }) => ({
     startup: {
       // enabled: false,
     },
+=======
+module.exports = ({ env }) => ({
+  host: env('HOST', '0.0.0.0'),
+  port: env.int('PORT', 1337),
+  app: {
+    keys: env.array('APP_KEYS'),
+  },
+  webhooks: {
+    populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
+>>>>>>> cb95d5d596d63f80bf5515746668dab1e5d5ba6a
   },
 });

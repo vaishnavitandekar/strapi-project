@@ -1,4 +1,5 @@
 module.exports = ({ env }) => ({
+<<<<<<< HEAD
   // autoOpen: false,
   auth: {
     secret: env('ADMIN_JWT_SECRET', 'example-token'),
@@ -28,11 +29,27 @@ module.exports = ({ env }) => ({
   },
   secrets: {
     encryptionKey: env('ENCRYPTION_KEY', 'example-key'),
+=======
+  auth: {
+    secret: env('ADMIN_JWT_SECRET'),
+  },
+  apiToken: {
+    salt: env('API_TOKEN_SALT'),
+  },
+  transfer: {
+    token: {
+      salt: env('TRANSFER_TOKEN_SALT'),
+    },
+  },
+  secrets: {
+    encryptionKey: env('ENCRYPTION_KEY'),
+>>>>>>> cb95d5d596d63f80bf5515746668dab1e5d5ba6a
   },
   flags: {
     nps: env.bool('FLAG_NPS', true),
     promoteEE: env.bool('FLAG_PROMOTE_EE', true),
   },
+<<<<<<< HEAD
   preview: {
     enabled: env.bool('PREVIEW_ENABLED', true),
     config: {
@@ -51,4 +68,6 @@ module.exports = ({ env }) => ({
   ai: {
     enabled: true,
   },
+=======
+>>>>>>> cb95d5d596d63f80bf5515746668dab1e5d5ba6a
 });

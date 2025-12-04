@@ -1,11 +1,18 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     "jsx": "react",
     "module": "NodeNext",
+=======
+>>>>>>> cb95d5d596d63f80bf5515746668dab1e5d5ba6a
     "moduleResolution": "nodenext",
     "target": "ES2021",
     "checkJs": true,
     "allowJs": true
+<<<<<<< HEAD
   },
   "exclude": ["node_modules"]
+=======
+  }
+>>>>>>> cb95d5d596d63f80bf5515746668dab1e5d5ba6a
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use strict';
 
 const responseHandlers = require('./src/response-handlers');
@@ -18,11 +19,18 @@ module.exports = [
       },
     },
   },
+=======
+module.exports = [
+  'strapi::logger',
+  'strapi::errors',
+  'strapi::security',
+>>>>>>> cb95d5d596d63f80bf5515746668dab1e5d5ba6a
   'strapi::cors',
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
   'strapi::session',
+<<<<<<< HEAD
   // 'strapi::compression',
   // 'strapi::ip',
   {
@@ -43,4 +51,8 @@ module.exports = [
     resolve: './src/custom/middleware.js',
     config: {},
   },
+=======
+  'strapi::favicon',
+  'strapi::public',
+>>>>>>> cb95d5d596d63f80bf5515746668dab1e5d5ba6a
 ];
